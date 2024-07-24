@@ -1,0 +1,397 @@
+
+
+/*for the discussion forum page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+  }
+  
+  header {
+    /*background-color: ;*/
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+  
+  }
+  
+  /* Reset default styles for the navigation links */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px; /* Adjust margin-right for spacing between links */
+  }
+  
+  nav ul li:last-child {
+    margin-right: 10; /* Remove margin-right for the last item */
+  }
+  
+  nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Set color to black */
+    font-weight: bold; /* Set font weight to bold */
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+  }
+  
+  .logo img {
+    height: 50px; /* Adjust as necessary */
+    margin-right: 1rem;
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+  
+  
+  
+  .hero {
+      background-image: url('https://static.vecteezy.com/system/resources/previews/011/875/478/original/meet-of-team-of-people-for-talk-dialog-communication-discussion-business-relationship-discuss-problems-together-exchange-opinions-of-team-worker-support-group-illustration-vector.jpg  ');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 4rem 0; /* Increased padding for more space */
+      max-width: 100%;
+      height: 150px; /* Adjust height as needed */
+  }
+  
+  h1{
+    color:#000;
+  }
+  
+  
+  
+  .container {
+      display: flex;
+      max-width: 1200px; /* Adjust maximum width as needed */
+      margin: 20px auto;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+      border-radius: 8px;
+   
+  }
+  
+  
+  
+  #sidebar {
+      width: 25%;
+      padding-right: 20px;
+      background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+      padding: 20px;
+  }
+  
+  h2{
+    color:#000
+  }
+  #sidebar h2 {
+      margin-bottom: 10px;
+      color: #2c3e50; /* Dark blue */
+    
+  }
+  
+  .filter-group {
+      margin-bottom: 15px;
+   ;
+  }
+  
+  .filter-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555; /* Dark gray */
+  }
+  
+  .filter-group input,
+  .filter-group select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd; /* Light border */
+      border-radius: 4px;
+      box-sizing: border-box;
+  }
+  
+  #sort-by {
+      margin-top: 8px;
+  }
+  
+  button[type="submit"] {
+      background-color: #2c3e50; /* Dark blue */
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+  }
+  
+  button[type="submit"]:hover {
+      background-color: #34495e; /* Darker blue on hover */
+  }
+  
+  /* Main content styles */
+  #main-content {
+      flex: 1;
+      padding: 20px;
+  }
+  
+  .discussion-section {
+      margin-bottom: 30px;
+  }
+  
+  .discussion {
+      background-color: #f9f9f9; /* Light gray background */
+      padding: 15px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd; /* Light border */
+      border-radius: 4px;
+    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+  }
+  
+  .discussion h3 {
+      margin-bottom: 5px;
+      color: #333; /* Dark gray */
+  }
+  
+  .discussion p {
+      margin: 5px 0;
+      color: #666; /* Gray */
+      font-size: 0.9em;
+  }
+  
+  .discussion .details {
+      font-size: 0.85em;
+      color: #888; /* Light gray */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+      .container {
+          flex-direction: column;
+      }
+  
+      #sidebar {
+          border-right: none;
+          border-bottom: 1px solid #ddd; /* Light border */
+          padding-bottom: 20px;
+          width: 100%;
+      }
+  
+      #main-content {
+          padding: 20px;
+      }
+  }
+  
+  
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+  }
+  
+  header {
+    /*background-color: ;*/
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+  
+  }
+  
+  /* Reset default styles for the navigation links */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px; /* Adjust margin-right for spacing between links */
+  }
+  
+  nav ul li:last-child {
+    margin-right: 10; /* Remove margin-right for the last item */
+  }
+  
+  nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Set color to black */
+    font-weight: bold; /* Set font weight to bold */
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+  }
+  
+  .logo img {
+    height: 50px; /* Adjust as necessary */
+    margin-right: 1rem;
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+  
+  
+  
+  .hero {
+      background-image: url('https://static.vecteezy.com/system/resources/previews/011/875/478/original/meet-of-team-of-people-for-talk-dialog-communication-discussion-business-relationship-discuss-problems-together-exchange-opinions-of-team-worker-support-group-illustration-vector.jpg  ');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 4rem 0; /* Increased padding for more space */
+      max-width: 100%;
+      height: 150px; /* Adjust height as needed */
+  }
+  
+  h1{
+    color:#000;
+  }
+  
+  
+  
+  .container {
+      display: flex;
+      max-width: 1200px; /* Adjust maximum width as needed */
+      margin: 20px auto;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+      border-radius: 8px;
+   
+  }
+  
+  
+  
+  #sidebar {
+      width: 25%;
+      padding-right: 20px;
+      background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+      padding: 20px;
+  }
+  
+  h2{
+    color:#000
+  }
+  #sidebar h2 {
+      margin-bottom: 10px;
+      color: #2c3e50; /* Dark blue */
+    
+  }
+  
+  .filter-group {
+      margin-bottom: 15px;
+   ;
+  }
+  
+  .filter-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555; /* Dark gray */
+  }
+  
+  .filter-group input,
+  .filter-group select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd; /* Light border */
+      border-radius: 4px;
+      box-sizing: border-box;
+  }
+  
+  #sort-by {
+      margin-top: 8px;
+  }
+  
+  button[type="submit"] {
+      background-color: #2c3e50; /* Dark blue */
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+  }
+  
+  button[type="submit"]:hover {
+      background-color: #34495e; /* Darker blue on hover */
+  }
+  
+  /* Main content styles */
+  #main-content {
+      flex: 1;
+      padding: 20px;
+  }
+  
+  .discussion-section {
+      margin-bottom: 30px;
+  }
+  
+  .discussion {
+      background-color: #f9f9f9; /* Light gray background */
+      padding: 15px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd; /* Light border */
+      border-radius: 4px;
+    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+  }
+  
+  .discussion h3 {
+      margin-bottom: 5px;
+      color: #333; /* Dark gray */
+  }
+  
+  .discussion p {
+      margin: 5px 0;
+      color: #666; /* Gray */
+      font-size: 0.9em;
+  }
+  
+  .discussion .details {
+      font-size: 0.85em;
+      color: #888; /* Light gray */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+      .container {
+          flex-direction: column;
+      }
+  
+      #sidebar {
+          border-right: none;
+          border-bottom: 1px solid #ddd; /* Light border */
+          padding-bottom: 20px;
+          width: 100%;
+      }
+  
+      #main-content {
+          padding: 20px;
+      }
+  }

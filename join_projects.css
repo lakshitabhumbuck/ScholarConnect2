@@ -1,0 +1,237 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+}
+
+header {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+}
+
+/* Reset default styles for the navigation links */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px; /* Adjust margin-right for spacing between links */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin-right for the last item */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Set color to black */
+    font-weight: bold; /* Set font weight to bold */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.logo img {
+    height: 50px; /* Adjust as necessary */
+    margin-right: 1rem;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+}
+
+.hero {
+    background-image: url('https://i.pinimg.com/originals/30/dc/5f/30dc5fdfa26661c1a001c1d5af0776b4.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #000;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.filter-section {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px; /* Adjust as needed */
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.filters-btn {
+    padding: 8px 12px; /* Adjust padding to make the button smaller */
+    background-color: #dbd7d2; /* Light gray for Filters button */
+    color: #333; /* Adjust text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px; /* Reduce margin between Filters button and first dropdown */
+    font-weight: bold;
+}
+
+.filters-btn:hover {
+    background-color: #e0e0e0; /* Darker gray on hover */
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Adjust margin between filter groups */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    padding: 8px 12px; /* Adjust padding to make the button smaller */
+    background-color: #005a8c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#search-bar {
+    padding: 8px;
+    margin-left: 10px; /* Adjust space between input and Filters button */
+}
+
+#search-button {
+    padding: 8px 16px;
+    background-color: #005a8c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px; /* Adjust space between button and input */
+}
+
+#search-button:hover {
+    background-color: #003049; /* Darker color on hover */
+}
+
+#project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Align projects in a row */
+}
+
+.project {
+    width: calc(50% - 20px); /* Adjust width and margin for spacing */
+    background-color: #4CAF50; /* Original green background color */
+    padding: 1rem;
+    margin: 10px; /* Adjust margin for spacing between projects */
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    text-align: left; /* Align text content to the left */
+    font-size: 1rem;
+    color: white; /* Text color */
+}
+
+.project h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.project p {
+    margin-bottom: 0.5rem;
+}
+
+.project .join-btn {
+    background-color: #fff;
+    color: #4CAF50; /* Green join button */
+    border: 2px solid #4CAF50; /* Green border */
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.project .join-btn:hover {
+    background-color: #4CAF50;
+    color: white; /* White text on hover */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.close-btn {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #aaa;
+}
+
+#popup-message {
+    font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project {
+        width: calc(100% - 20px); /* Adjust width for smaller screens */
+    }
+}
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scholar Connect - Join Projects</title>
+
+  <link rel="stylesheet" href="join_projects.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://static.vecteezy.com/system/resources/previews/004/841/445/original/academic-research-talent-rgb-color-icon-vector.jpg" alt="Research Hub Logo">
+      <h1>Scholar Connect</h1>
+        
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Collaboration</a></li>
+        <li><a href="#">Discussion</a></li>
+        <li><a href="#">Live Q&A</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Join Projects</h2>
+  </div>
+
+  <div class="spacer"></div> <!-- Added spacer for better spacing -->
+
+  
+   <!-- Filter and Search Section -->
+<div class="filter-section">
+  <div class="filter-group">
+    <button class="filters-btn">Filters</button>
+  </div>
+  
+ 
+  <div class="filter-group">
+    <div class="dropdown">
+      <button class="dropbtn">Area of Interest</button>
+      <div class="dropdown-content">
+        <a href="#" data-filter="artificial intelligence">Artificial Intelligence</a>
+        <a href="#" data-filter="biomechanics">Biomechanics</a>
+        <a href="#" data-filter="Quantum Computing">Quantum Computing</a>
+        <a href="#" data-filter="computer vision">Computer Vision</a>
+        <a href="#" data-filter="robotics">Robotics</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="filter-group">
+    <div class="dropdown">
+      <button class="dropbtn">Status</button>
+      <div class="dropdown-content">
+        <a href="#" data-filter="not-started">Not Started </a>
+        <a href="#" data-filter="ongoing">Ongoing</a>
+        <a href="#" data-filter="completed">Completed</a>
+        <!-- Add more categories as needed -->
+      </div>
+    </div>
+  </div>
+  <div class="filter-group">
+    <input type="text" id="search-bar" placeholder="Search by keyword">
+    <button id="search-button">Search</button>
+  </div>
+</div>
+
+  
+  
+  
+  
+  <main>
+    <div class="container" id="project-list">
+      <!-- Sample Research Projects -->
+      
+      
+            <div class="row">
+        <div class="col">
+      <div class="project"  data-area="artificial-intelligence" data-status="ongoing">
+  <h3>Artificial Intelligence in Healthcare Diagnostics</h3>
+  <p><strong>About:</strong> Investigating the application of AI algorithms in enhancing diagnostic accuracy for healthcare systems.</p>
+  <p><strong>Skills Needed:</strong> Machine learning, medical imaging, Python programming.</p>
+  <p><strong>Under Professor:</strong> Prof. Priya Malik</p>
+  <p><strong>Time Commitment:</strong> 12 hours per week</p>
+  <p><strong>Author:</strong> Lakshita Bhumbuck</p>
+  <p><strong>Other Collaborators:</strong> Pooja Mathur, Tanya Gupta</p>
+  <p><strong>Email:</strong> lakshita98@gmail.com</p>
+  <p><strong>Status:</strong> Ongoing</p>
+  <button class="join-btn">Join</button>
+</div>
+ </div>
+
+
+<div class="col">
+
+<div class="project"  data-area="computer-vision" data-status="completed">
+  <h3>Enhanced Facial Recognition Systems</h3>
+  <p><strong>About:</strong> Development of advanced algorithms for improving accuracy and speed in facial recognition systems.</p>
+  <p><strong>Skills Needed:</strong> Computer vision, deep learning, C++ programming.</p>
+  <p><strong>Under Professor:</strong> Prof. Seeja Kumar</p>
+  <p><strong>Time Commitment:</strong> 15 hours per week</p>
+  <p><strong>Author:</strong> Lavanaya Kapoor</p>
+  <p><strong>Other Collaborators:</strong> Radhika Gupta, Abhigya Sharma </p>
+  <p><strong>Email:</strong> lavanya67@gmail.com</p>
+  <p><strong>Status:</strong> Completed</p>
+  <button class="join-btn">Join</button>
+</div>
+ </div>
+ </div>
+
+      <div class="row">
+        <div class="col">
+
+<div class="project"  data-area="quantum-computing" data-status="not-started">
+  <h3>Applications of Quantum Computing</h3>
+  <p><strong>About:</strong> Exploration of potential applications of quantum computing in cryptography and data security.</p>
+  <p><strong>Skills Needed:</strong> Quantum mechanics, theoretical computer science, quantum algorithms.</p>
+  <p><strong>Under Professor:</strong> Prof. Priya Malik</p>
+  <p><strong>Time Commitment:</strong> 10 hours per week</p>
+  <p><strong>Author:</strong> Navya Goel</p>
+  <p><strong>Other Collaborators:</strong> Aditi Gupta</p>
+  <p><strong>Email:</strong> navyag@gmail.com</p>
+  <p><strong>Status:</strong> Not Started</p>
+  <button class="join-btn">Join</button>
+</div>
+</div>
+        
+        
+ <div class="col">
+<div class="project"  data-area="robotics" data-status="ongoing">
+  <h3>Autonomous Navigation in Robotics</h3>
+  <p><strong>About:</strong> Research on developing autonomous navigation systems for mobile robots using sensor fusion techniques.</p>
+  <p><strong>Skills Needed:</strong> Robotics, sensor fusion, embedded systems.</p>
+  <p><strong>Under Professor:</strong> Prof. RN Sharma</p>
+  <p><strong>Time Commitment:</strong> 12 hours per week</p>
+  <p><strong>Author:</strong> Riya Singh</p>
+  <p><strong>Other Collaborators:</strong> Aditi Gupta</p>
+  <p><strong>Email:</strong> riya.singh@gmail.com.com</p>
+  <p><strong>Status:</strong> Ongoing</p>
+  <button class="join-btn">Join</button>
+</div>
+</div>
+</div>
+    </div>
+  </main>
+
+ 
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="close-popup">&times;</span>
+      <p id="popup-message">You have successfully joined the project!</p>
+    </div>
+  </div>
+
+
+  <script src="join_projects.js"></script>
+</body>
+</html>

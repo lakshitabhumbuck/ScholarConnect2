@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cholar Connect - Start a Discussion</title>
+  <link rel="stylesheet" href="start_discussion.css">
+
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://static.vecteezy.com/system/resources/previews/004/841/445/original/academic-research-talent-rgb-color-icon-vector.jpg" alt="Research Hub Logo">
+      <h1>Scholar Connect</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Collaboration</a></li>
+        <li><a href="#">Discussion</a></li>
+        <li><a href="#">Live Q&A</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Start a Discussion</h1>
+  </div>
+
+  <div class="container">
+    <h2>Create New Thread</h2>
+    <form id="create-thread-form">
+      <div class="form-group">
+        <label for="thread-title">Title:</label>
+        <input type="text" id="thread-title" name="thread-title" required>
+      </div>
+      <div class="form-group">
+        <label for="thread-interest">Area of Interest:</label>
+        <input type="text" id="thread-interest" name="thread-interest" required>
+      </div>
+      <div class="form-group">
+        <label for="thread-branch">Select your branch:</label>
+        <select id="thread-branch" name="thread-branch" required>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Electrical">Electrical</option>
+          <option value="Mechanical">Mechanical</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="thread-description">Description:</label>
+        <textarea id="thread-description" name="thread-description" required></textarea>
+      </div>
+      <button type="submit">Create Thread</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('create-thread-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      alert('Thread created successfully!');
+      
+      this.reset();
+    });
+  </script>
+</body>
+</html>
+

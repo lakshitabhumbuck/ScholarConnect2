@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Hub - Join Projects</title>
+
+  <link rel="stylesheet" href="create_your_project.css">
+  <script src="create_your_project.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://static.vecteezy.com/system/resources/previews/004/841/445/original/academic-research-talent-rgb-color-icon-vector.jpg" alt="Research Hub Logo">
+      <h1>Scholar Connect</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="collaboartion.html">Collaboration</a></li>
+        <li><a href="discussion_forum.html">Discussion</a></li>
+        <li><a href="live_q&a.html">Live Q&A</a></li>
+        <li><a href="resource_library.html">Resources</a></li>
+        <li><a href="help.html">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Create Your Project</h2>
+  </div>
+
+  <div class="spacer"></div> <!-- Added spacer for better spacing -->
+
+  <main>
+    <div class="container">
+      <section id="join-my-research" class="section">
+        <h2>Enter your project details:</h2>
+        <form id="create-project-form" class="form">
+          <label for="project-title">Project Title:</label>
+          <input type="text" id="project-title" required>
+          
+          <label for="project-description">Project Description:</label>
+          <textarea id="project-description" rows="4" required></textarea>
+          
+          <label for="skills-needed">Skills Needed:</label>
+          <input type="text" id="skills-needed" required>
+          
+          <label for="under-professor">Under Professor:</label>
+          <input type="text" id="under-professor">
+          
+          <label for="time-commitment">Time Commitment (hours per week):</label>
+          <input type="number" id="time-commitment" required>
+          
+          <label for="author">Author:</label>
+          <input type="text" id="author" required>
+          
+          <label for="your-email">Your Email:</label>
+          <input type="email" id="your-email" required>
+          
+          <button type="submit" id="submit-btn">Create Project</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="close-popup">&times;</span>
+      <p id="popup-message">You have successfully created your project!</p>
+    </div>
+  </div>
+</body>
+</html>

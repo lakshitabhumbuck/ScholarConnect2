@@ -1,0 +1,2174 @@
+/* fo the home page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #1d3557;
+    background-color: #f1faee;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff; /* Light background color */
+    padding: 1rem 2rem;
+    color: #000000; /* Dark text color */
+    width: 100%;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+
+}
+
+.top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff; /* Light background color for top bar */
+    padding: 1rem;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+.top-bar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar .logo img {
+    max-width: 50px;
+    margin-right: 10px; /* Adjust spacing between logo and text */
+}
+
+.top-bar .logo h1 {
+    margin: 0;
+    color: #e63946; /* Red color for logo text */
+}
+
+.search-login {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-login input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search, .login {
+    background: #457b9d; /* Blue color for buttons */
+    color: #f1faee; /* Light text color for buttons */
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+ 
+
+nav {
+  background: #1d3557;
+    width: 100%;
+    background: #1d3557; /* Dark blue background for navigation */
+    padding: 1rem 0;
+ 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: #f1faee; /* Light text color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner {
+    background: url('https://cdn.wallpapersafari.com/32/92/DLYaeb.jpg') no-repeat center center/cover;
+    background-size: cover; 
+    padding: 5rem 2rem;
+    text-align: center;
+    color: #fff; /* White text color */
+    font-weight: bold; /* Bold text */
+}
+
+
+
+.banner h2 {
+    font-size: 2.5rem;
+}
+
+.banner p {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  
+  color: #fff; /* Dark black color */
+}
+
+
+main {
+    padding: 2rem;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.section h2 {
+    color: #e63946; /* Red color for section titles */
+    margin-bottom: 1rem;
+}
+
+.section p {
+    color: #1d3557; /* Dark blue text color for section descriptions */
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  display: flex; flex-wrap: wrap; justify-content: center;
+}
+
+.service {
+    flex: 1;
+    margin: 1rem;
+    background: #ffffff; /* White background for services */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.service img {
+    max-width: 80px;
+    margin-bottom: 1rem;
+}
+
+.service h3 {
+    color: #e63946; /* Red color for service titles */
+    margin-bottom: 1rem;
+}
+
+.service p {
+    margin-bottom: 1rem;
+    color: #000000; /* Dark text color for service description */
+}
+
+.service button {
+    background: #457b9d; /* Blue color for service buttons */
+    color: #f1faee; /* Light text color for service buttons */
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+footer {
+    background: #1d3557; /* Dark blue background for footer */
+    color: #f1faee; /* Light text color for footer */
+    text-align: center;
+    padding: 1rem;
+}
+
+.service {
+    /* Your default styles for service items */
+}
+
+.service.expanded {
+    /* Styles for expanded service items */
+    height: auto; /* or any other style to expand the content */
+    overflow: visible; /* or auto, depending on your layout needs */
+}
+
+
+
+
+
+
+
+/* for the collaboration- search projects page */
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  background-color: transparent;
+  padding: 1rem 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.logo h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.header-title {
+  margin-top: 10px;
+}
+
+.header-title h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.form h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333333;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+  border-color: #007bff;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+button[type="submit"]:active {
+  background-color: #004494;
+  transform: translateY(0);
+}
+
+.form-footer {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.form-footer p {
+  font-size: 0.9rem;
+  color: #333333;
+}
+
+.form-footer a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: transparent;
+  color: #ffffff;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+
+
+
+
+
+/*for the sign up page */
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px; /* Reduced padding */
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 280px; /* Reduced the maximum width */
+  margin-bottom: 20px; /* Added margin-bottom to prevent overlap */
+}
+
+.form h2 {
+  font-size: 1.2rem; /* Reduced font size */
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333333;
+}
+
+.form-group {
+  margin-bottom: 10px; /* Reduced margin between form groups */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px; /* Reduced margin */
+  font-size: 0.85rem; /* Reduced font size */
+  color: #333333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="tel"] {
+  width: 100%;
+  padding: 8px; /* Reduced padding */
+  font-size: 0.8rem; /* Reduced font size */
+  border: 1px solid #cccccc;
+  border-radius: 20px; /* Slightly smaller border-radius */
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus,
+.form-group input[type="tel"]:focus {
+  border-color: #007bff;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 8px 16px; /* Reduced padding */
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px; /* Slightly smaller border-radius */
+  cursor: pointer;
+  font-size: 0.8rem; /* Reduced font size */
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+button[type="submit"]:active {
+  background-color: #004494;
+  transform: translateY(0);
+}
+
+.form-footer {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.form-footer p {
+  font-size: 0.75rem; /* Reduced font size */
+  color: #333333;
+}
+
+.form-footer a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: transparent;
+  color: #ffffff;
+  width: 100%;
+  margin-top: auto; /* Ensure footer stays at the bottom */
+  position: relative; /* Adjusted to prevent overlapping */
+}
+
+
+
+
+/*for the collaboartion - saerch projects page*/
+
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+}
+
+header {
+  /*background-color: ;*/
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+
+}
+
+/* Reset default styles for the navigation links */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px; /* Adjust margin-right for spacing between links */
+}
+
+nav ul li:last-child {
+  margin-right: 10; /* Remove margin-right for the last item */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove underline */
+  color: black; /* Set color to black */
+  font-weight: bold; /* Set font weight to bold */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.logo img {
+  height: 50px; /* Adjust as necessary */
+  margin-right: 1rem;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+}
+
+
+
+.hero {
+  background-image: url('https://images.pexels.com/photos/6070384/pexels-photo-6070384.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+
+}
+
+h1 {
+    color: #000000; /* Hexadecimal color code for black */
+  margin-bottom: 10px
+}
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project {
+    width: 100%;
+  }
+}
+
+
+
+
+body {
+  font-family: Arial, sans-serif; /* Set your preferred font family */
+  line-height: 1.6; /* Adjust line height for readability */
+  background-color: #f0f0f0; /* Set background color */
+  color: #333; /* Set text color */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+ 
+}
+
+
+
+.main {
+  display: flex;
+  padding: 20px;
+}
+
+.search-filters {
+  width: 40%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
+
+.search-filters h2 {
+  color: #000; 
+  margin-bottom: 20px;
+
+}
+
+.filter-group {
+  margin-bottom: 15px;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.filter-group input[type="text"],
+.filter-group input[type="email"],
+.filter-group textarea,
+.filter-group input[type="number"],
+.filter-group select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.filter-group select {
+  padding: 6px;
+}
+
+.search-filters button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-filters button[type="submit"]:hover {
+  background-color: #0056b3;
+  
+}
+
+.related-results {
+  width: 60%;
+  background-color: #EAD2A8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+
+.related-results h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.related-results #related-results-content {
+  /* Add additional styles for related results content if needed */
+}
+
+.related-paper {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 60px; /* Add space between related papers */
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+
+.spacer {
+  height: 20px;
+}
+
+
+
+
+
+
+
+
+/*for the collaboration- join projects page*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+}
+
+header {
+ /* background-color: ;*/
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+
+}
+
+/* Reset default styles for the navigation links */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px; /* Adjust margin-right for spacing between links */
+}
+
+nav ul li:last-child {
+  margin-right: 10; /* Remove margin-right for the last item */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove underline */
+  color: black; /* Set color to black */
+  font-weight: bold; /* Set font weight to bold */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.logo img {
+  height: 50px; /* Adjust as necessary */
+  margin-right: 1rem;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+}
+
+
+
+.hero {
+  background-image: url('https://i.pinimg.com/originals/30/dc/5f/30dc5fdfa26661c1a001c1d5af0776b4.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #000;
+  text-align: center;
+  padding: 2rem 0;
+
+}
+
+
+
+
+.filter-section {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px; /* Adjust as needed */
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.filters-btn {
+  padding: 8px 92px; /* Adjust padding to make the button smaller */
+  background-color: #dbd7d2 ; /* Light gray for Filters button */
+  color: #333; /* Adjust text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px; /* Reduce margin between Filters button and first dropdown */
+  font-weight: bold
+}
+
+.filters-btn:hover {
+  background-color: #e0e0e0; /* Darker gray on hover */
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Adjust margin between filter groups */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  padding: 8px 12px; /* Adjust padding to make the button smaller */
+  background-color: #005a8c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#search-bar {
+  padding: 8px;
+  margin-left: 10px; /* Adjust space between input and Filters button */
+}
+
+#search-button {
+  padding: 8px 16px;
+  background-color: #005a8c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px; /* Adjust space between button and input */
+}
+
+#search-button:hover {
+  background-color: #003049; /* Darker color on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#project-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: calc(50% - 1rem);
+  background-color: #f2f2f2;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 8px;
+}
+
+.project h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project p {
+  margin-bottom: 0.5rem;
+}
+
+.join-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.close-btn {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #aaa;
+}
+
+#popup-message {
+  font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project {
+    width: 100%;
+  }
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0.5rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown.show .dropdown-content {
+  display: block;
+}
+
+
+
+/* Sample CSS for grid layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  
+   
+}
+
+
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.col {
+  width: calc(50% - 10px); /* Adjust width for spacing between columns */
+}
+
+.project {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.project {
+  width: 300px; /* Adjust width as needed */
+  margin: 10px; /* Adjust margin for spacing */
+  padding: 20px;
+  border: 1px solid #000; /* Black solid border */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  text-align: left; /* Align text content to the left */
+  
+  background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+ 
+  font: caption;
+  
+}
+
+
+
+/* for collaboration- creat your project page */
+
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+}
+
+header {
+  /*background-color: ;*/
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+
+}
+
+/* Reset default styles for the navigation links */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px; /* Adjust margin-right for spacing between links */
+}
+
+nav ul li:last-child {
+  margin-right: 10; /* Remove margin-right for the last item */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove underline */
+  color: black; /* Set color to black */
+  font-weight: bold; /* Set font weight to bold */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.logo img {
+  height: 50px; /* Adjust as necessary */
+  margin-right: 1rem;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+}
+
+
+
+.hero {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/001/437/080/non_2x/geometric-abstract-with-memphis-style-background-free-vector.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+
+}
+
+h2 {
+    color: #000000; /* Hexadecimal color code for black */
+  margin-bottom: 20px
+}
+
+
+
+.popup {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.close-btn {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #aaa;
+}
+
+#popup-message {
+  font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project {
+    width: 100%;
+  }
+}
+
+
+
+
+body {
+  font-family: Arial, sans-serif; /* Set your preferred font family */
+  line-height: 1.6; /* Adjust line height for readability */
+  background-color: #f0f0f0; /* Set background color */
+  color: #333; /* Set text color */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+ 
+}
+
+.section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+
+}
+
+.form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+ 
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea,
+.form input[type="number"] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+.form button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+/*for the discussion forum page */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+}
+
+header {
+  /*background-color: ;*/
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+
+}
+
+/* Reset default styles for the navigation links */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px; /* Adjust margin-right for spacing between links */
+}
+
+nav ul li:last-child {
+  margin-right: 10; /* Remove margin-right for the last item */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove underline */
+  color: black; /* Set color to black */
+  font-weight: bold; /* Set font weight to bold */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.logo img {
+  height: 50px; /* Adjust as necessary */
+  margin-right: 1rem;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+}
+
+
+
+.hero {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/011/875/478/original/meet-of-team-of-people-for-talk-dialog-communication-discussion-business-relationship-discuss-problems-together-exchange-opinions-of-team-worker-support-group-illustration-vector.jpg  ');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 0; /* Increased padding for more space */
+    max-width: 100%;
+    height: 150px; /* Adjust height as needed */
+}
+
+h1{
+  color:#000;
+}
+
+
+
+.container {
+    display: flex;
+    max-width: 1200px; /* Adjust maximum width as needed */
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border-radius: 8px;
+ 
+}
+
+
+
+#sidebar {
+    width: 25%;
+    padding-right: 20px;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    padding: 20px;
+}
+
+h2{
+  color:#000
+}
+#sidebar h2 {
+    margin-bottom: 10px;
+    color: #2c3e50; /* Dark blue */
+  
+}
+
+.filter-group {
+    margin-bottom: 15px;
+ ;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555; /* Dark gray */
+}
+
+.filter-group input,
+.filter-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#sort-by {
+    margin-top: 8px;
+}
+
+button[type="submit"] {
+    background-color: #2c3e50; /* Dark blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+    background-color: #34495e; /* Darker blue on hover */
+}
+
+/* Main content styles */
+#main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.discussion-section {
+    margin-bottom: 30px;
+}
+
+.discussion {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px;
+  background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+}
+
+.discussion h3 {
+    margin-bottom: 5px;
+    color: #333; /* Dark gray */
+}
+
+.discussion p {
+    margin: 5px 0;
+    color: #666; /* Gray */
+    font-size: 0.9em;
+}
+
+.discussion .details {
+    font-size: 0.85em;
+    color: #888; /* Light gray */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    #sidebar {
+        border-right: none;
+        border-bottom: 1px solid #ddd; /* Light border */
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    #main-content {
+        padding: 20px;
+    }
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+}
+
+header {
+  /*background-color: ;*/
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+
+}
+
+/* Reset default styles for the navigation links */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px; /* Adjust margin-right for spacing between links */
+}
+
+nav ul li:last-child {
+  margin-right: 10; /* Remove margin-right for the last item */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove underline */
+  color: black; /* Set color to black */
+  font-weight: bold; /* Set font weight to bold */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.logo img {
+  height: 50px; /* Adjust as necessary */
+  margin-right: 1rem;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+}
+
+
+
+.hero {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/011/875/478/original/meet-of-team-of-people-for-talk-dialog-communication-discussion-business-relationship-discuss-problems-together-exchange-opinions-of-team-worker-support-group-illustration-vector.jpg  ');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 0; /* Increased padding for more space */
+    max-width: 100%;
+    height: 150px; /* Adjust height as needed */
+}
+
+h1{
+  color:#000;
+}
+
+
+
+.container {
+    display: flex;
+    max-width: 1200px; /* Adjust maximum width as needed */
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border-radius: 8px;
+ 
+}
+
+
+
+#sidebar {
+    width: 25%;
+    padding-right: 20px;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    padding: 20px;
+}
+
+h2{
+  color:#000
+}
+#sidebar h2 {
+    margin-bottom: 10px;
+    color: #2c3e50; /* Dark blue */
+  
+}
+
+.filter-group {
+    margin-bottom: 15px;
+ ;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555; /* Dark gray */
+}
+
+.filter-group input,
+.filter-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#sort-by {
+    margin-top: 8px;
+}
+
+button[type="submit"] {
+    background-color: #2c3e50; /* Dark blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+    background-color: #34495e; /* Darker blue on hover */
+}
+
+/* Main content styles */
+#main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.discussion-section {
+    margin-bottom: 30px;
+}
+
+.discussion {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px;
+  background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+}
+
+.discussion h3 {
+    margin-bottom: 5px;
+    color: #333; /* Dark gray */
+}
+
+.discussion p {
+    margin: 5px 0;
+    color: #666; /* Gray */
+    font-size: 0.9em;
+}
+
+.discussion .details {
+    font-size: 0.85em;
+    color: #888; /* Light gray */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    #sidebar {
+        border-right: none;
+        border-bottom: 1px solid #ddd; /* Light border */
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    #main-content {
+        padding: 20px;
+    }
+}
+
+
+
+
+
+/*for resource library */
+
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+}
+
+header {
+ /* background-color: ;*/
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+
+}
+
+/* Reset default styles for the navigation links */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px; /* Adjust margin-right for spacing between links */
+}
+
+nav ul li:last-child {
+  margin-right: 10; /* Remove margin-right for the last item */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove underline */
+  color: black; /* Set color to black */
+  font-weight: bold; /* Set font weight to bold */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.logo img {
+  height: 50px; /* Adjust as necessary */
+  margin-right: 1rem;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+}
+
+
+
+.hero {
+  background-image: url('https://cms.sampoernaagro.com/storage/files/shares/CORPORATEGOVERNANCE/5f92cd4bcd59a.png ');
+  background-size: cover;
+  background-position: right;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+
+}
+
+
+
+
+.filter-section {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px; /* Adjust as needed */
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.filters-btn {
+  padding: 8px 92px; /* Adjust padding to make the button smaller */
+  background-color: #dbd7d2 ; /* Light gray for Filters button */
+  color: #333; /* Adjust text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px; /* Reduce margin between Filters button and first dropdown */
+  font-weight: bold
+}
+
+.filters-btn:hover {
+  background-color: #e0e0e0; /* Darker gray on hover */
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Adjust margin between filter groups */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.dropbtn {
+  padding: 8px 12px; /* Adjust padding to make the button smaller */
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#search-bar {
+  padding: 8px;
+  margin-left: 10px; /* Adjust space between input and Filters button */
+}
+
+#search-button {
+  padding: 8px 16px;
+  background-color: #005a8c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px; /* Adjust space between button and input */
+}
+
+#search-button:hover {
+  background-color: #003049; /* Darker color on hover */
+}
+
+
+
+
+#resource-list {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.resource-item {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1 1 calc(33.333% - 40px);
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+   margin-bottom: 40px; /* Add margin-bottom to create space between items */
+
+}
+
+.resource-item img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.resource-item h3 {
+  color: #005a8c;
+  margin: 10px 0;
+   color: black;
+  font-family: Georgia, serif;
+}
+
+.resource-item p {
+  margin: 5px 0;
+  font-family: Georgia, serif;
+}
+
+.resource-item .icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #005a8c;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.resource-item {
+  background-color: #FFB6C1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1 1 calc(33.333% - 40px);
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px; /* Add margin-bottom to create space between items */
+  background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+  
+}
+
+
+
+
+
+
+/*for live q&a */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+}
+
+header {
+   background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+  background-color: #ffffff;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+section, #main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+h2 {
+  color: #000;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#go-live-btn {
+  background-color: #ff0000; /* Red color for Go Live button */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Sidebar styles */
+#sidebar {
+  width: 25%;
+  padding-right: 20px;
+  background-color: #ffffcc; /* Light yellow background */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#sidebar h2 {
+  margin-bottom: 10px;
+  color: #2c3e50; /* Dark blue */
+}
+
+.live-user {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.live-user img {
+  width: 20px; /* Adjust icon size */
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.live-questions li {
+  list-style-type: disc; /* Style for live questions */
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+/* for help page */
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+}
+
+header {
+   background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+  background-color: #ffffff;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+
+/* Help page specific styles */
+
+/* Section styling */
+section {
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Form styling */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555555;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+/* Report a User section */
+#report-user {
+  background-color: #ffb6c1; /* Light pastel color */
+  border: 1px solid #e0e0e0; /* Light border */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  margin-top: 20px; 
+}
+
+/* Contact Us section */
+#contact-us {
+  background-color: #FFFFE0; /* Light pastel color */
+  border: 1px solid #e0e0e0; /* Light border */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  max-width: 800px; /* Adjusted width for better centering */
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
